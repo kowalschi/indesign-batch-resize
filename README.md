@@ -14,16 +14,31 @@ This repository documents the progression of my JavaScript/ExtendScript skills a
 
 ### Adobe InDesign Batch Resize Script
 
-This is a JavaScript script for Adobe InDesign that automates the process of resizing. It is designed for people who work with InDesign documents and want to speed up repetitive resizing tasks without doing everything by hand.
 
-This script takes a master InDesign document built from a single key visual and generates many advertising poster formats (resized) automatically.
+I developed a script for Adobe InDesign that automates the resizing process. In advertising, it is often necessary to take a key visual and produce multiple variants of it — same content, different dimensions — for print or web use. This process is commonly referred to as **resizing** or **declination** of a key visual. The script can handle multiple key visuals at once and resize them to any required dimensions.
 
-### What it really does
+The script takes its input from an Excel file containing the new file names, target sizes, and additional information such as the output location of print materials or the destination format (web or print).
 
-- Starts from a master layout or key visual
-- Creates multiple output sizes and formats from that single design
-- Resizes pages and layout elements to fit different poster dimensions
-- Keeps the same core visual while producing many versions
+###How it works###
+
+The method used by the script relies on a **master Adobe InDesign document** that contains multiple page variants — portrait, square, and landscape. The script reads the Excel file line by line and uses this master file to generate new InDesign files at the specified dimensions. It selects the appropriate page from the master based on the orientation of the target format: portrait pages are used as the basis for new portrait sizes, landscape pages for landscape outputs, and so on.
+
+The determining factor for page selection is the **aspect ratio** (width divided by height). The master file contains a comprehensive set of ratio-based pages, designed to cover virtually all possible aspect ratios a new key visual might require.
+
+###Label-based positioning rules###
+
+The script uses a **labeling system** to define precise positioning rules for each element on the page. For example:
+- The **logo** must always be placed in the bottom-right corner at defined distances from the margins.
+- The **background** must fully cover the surface of the key visual, including bleed for print.
+- **Legal or warning text** must always appear at the bottom, with a height equal to 10% of the visual's total height.
+- The **"New" badge** must be positioned in the top-left corner with defined spacing from the margins.
+- A **transparent gradient overlay** must sit above the background at the bottom of the page and must include bleed.
+
+The script applies all of these rules automatically, honoring each label's defined behavior during the resizing process.
+
+###Impact###
+
+After the script completes, human intervention is drastically reduced. Manually resizing a key visual to a new format typically takes between 30 minutes and several hours. With the script, the same task requires approximately **5 minutes of human involvement** per format — and the time savings multiply significantly when hundreds of new sizes need to be produced.
 
 ### Who it helps
 
