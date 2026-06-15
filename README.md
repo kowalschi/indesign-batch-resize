@@ -18,7 +18,7 @@ I developed a script for Adobe InDesign that automates the resizing process. In 
 
 The script takes its input from an Excel file containing the new file names, target sizes, and additional information such as the output location of print materials or the destination format (web or print).
 
-[Visit my site at resize.magic.re] <a href="https://resize.magic.re/" target="_blank">Open in new tab</a>
+[Visit my site at resize.magic.re] <a href="https://resize.magic.re/" target="_blank">*(right-click → open in new tab)*</a>
 
 
 ### How it works
