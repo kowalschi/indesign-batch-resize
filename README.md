@@ -14,10 +14,12 @@ This repository documents the progression of my JavaScript/ExtendScript skills a
 
 # Adobe InDesign Batch Resize Script
 
-
 I developed a script for Adobe InDesign that automates the resizing process. In advertising, it is often necessary to take a key visual and produce multiple variants of it — same content, different dimensions — for print or web use. This process is commonly referred to as **resizing** or **declination** of a key visual. The script can handle multiple key visuals at once and resize them to any required dimensions.
 
 The script takes its input from an Excel file containing the new file names, target sizes, and additional information such as the output location of print materials or the destination format (web or print).
+
+[Visit my site at resize.magic.re] <a href="https://resize.magic.re/" target="_blank">Open in new tab</a>
+
 
 ### How it works
 
