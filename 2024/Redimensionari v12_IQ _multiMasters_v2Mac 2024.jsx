@@ -11,6 +11,13 @@
 
 /* 
 
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
 Automated resizing v11
 
 (c) Dan Ichimescu constantindan@gmail.com
@@ -801,7 +808,7 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
     app.documents[0].activeLayer = app.documents[0].layers.itemByName("id");
     app.documents.item(0).layers.itemByName("id").locked = false;
     app.documents.item(0).layers.itemByName("vizibil").locked = false;
-  } catch (e) {}
+  } catch (e) { }
 
   myPage = app.documents[0].pages.item(0);
   var textFrame_info = myPage.textFrames.add();
@@ -840,7 +847,7 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
     appliedLanguage = "English: USA";
     textFrame_info.fit(FitOptions.FRAME_TO_CONTENT);
     textFrame_info.move([total_W + 20, 0]); //total_H + 15
-  } catch (e) {}
+  } catch (e) { }
 
   //********************************** text info end
 
@@ -1857,7 +1864,7 @@ function GetDataFromExcelPC_INDD(excelFilePath, sheetNumber) {
 
     try {
       myDoc.close(SaveOptions.no);
-    } catch (e) {}
+    } catch (e) { }
     return multiArray;
   }
   // alert(data[1][0])

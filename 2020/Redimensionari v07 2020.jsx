@@ -1,3 +1,11 @@
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
@@ -559,22 +567,22 @@ function scaleDocument(vizibil_W, vizibil_H, total_W, total_H) {
     // total_Hq=total_H/2.8346438836889;
     //     alert(" w vizibil pt "+" este "+vizibil_W_q+" h vizibil pt "+vizibil_H_q+" w t pt "+" este "+total_Wq+" h t pt "+total_Hq);
     ////** */
-                    // myPage = app.documents[0].pages.item(0);
-                    // with (myPage) {
-                    //     app.documents[0].activeLayer = app.documents[0].layers.itemByName("vizibil");
-                    //     guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: myPage.bounds[1] });
-                    //     guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: myPage.bounds[3] });
-                    //     guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[0] });
-                    //     guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[2] });
+    // myPage = app.documents[0].pages.item(0);
+    // with (myPage) {
+    //     app.documents[0].activeLayer = app.documents[0].layers.itemByName("vizibil");
+    //     guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: myPage.bounds[1] });
+    //     guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: myPage.bounds[3] });
+    //     guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[0] });
+    //     guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[2] });
 
-                    //     // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[1]});
-                    //     // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[3]});
-                    //     // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[0]});
-                    //     // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[2]});
+    //     // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[1]});
+    //     // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[3]});
+    //     // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[0]});
+    //     // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[2]});
 
-                    //     //**** */
+    //     //**** */
 
-                    // }
+    // }
 
 
 
@@ -624,9 +632,9 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
     // alert("idsimargineDocument")
     // app.activeDocument = app.documents[0];
     try {
-    app.documents[0].activeLayer = app.documents[0].layers.itemByName("id");
-}
-catch (e) { }
+        app.documents[0].activeLayer = app.documents[0].layers.itemByName("id");
+    }
+    catch (e) { }
     // pages = app.activeDocument.pages
     myPage = app.documents[0].pages.item(0);
     var textFrame = myPage.textFrames.add(); // ID ul
@@ -937,7 +945,7 @@ function aliniereHwDocument(vizibil_W, vizibil_H, total_W, total_H) {
 
         }
     }
-     //***-****** aliniere margini = vizibil
+    //***-****** aliniere margini = vizibil
 
 
     var count = 0
@@ -1087,20 +1095,20 @@ function aliniereHwDocument(vizibil_W, vizibil_H, total_W, total_H) {
         var b = myPage.bounds;
         var W_ = b[3] - b[1]; // 
         var H_ = b[2] - b[0]; // 
-    
+
         app.documents[0].activeLayer = app.documents[0].layers.itemByName("vizibil");
-        guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: (W_-m_right) });
+        guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: (W_ - m_right) });
         guides.add(undefined, { orientation: HorizontalOrVertical.vertical, location: m_left }); // ok
         guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: m_top }); // ok
-        guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: (H_-m_bottom) });
-    
+        guides.add(undefined, { orientation: HorizontalOrVertical.horizontal, location: (H_ - m_bottom) });
+
         // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[1]});
         // guides.add(undefined, {orientation: HorizontalOrVertical.vertical, location: myPage.bounds[3]});
         // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[0]});
         // guides.add(undefined, {orientation: HorizontalOrVertical.horizontal, location: myPage.bounds[2]});
-    
+
         //**** */
-    
+
     }
 
 

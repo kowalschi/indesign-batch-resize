@@ -1,3 +1,10 @@
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
@@ -630,156 +637,156 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar, va
     // alert("idsimargineDocument")
     // app.activeDocument = app.documents[0];
     ///----------out id
-            // try {
-            //     app.documents[0].activeLayer = app.documents[0].layers.itemByName("id");
-            // }
-            // catch (e) { }
-            // // pages = app.activeDocument.pages
-            // myPage = app.documents[0].pages.item(0);
-            // var textFrame = myPage.textFrames.add(); // ID ul
-            // var textFrame_info = myPage.textFrames.add();
-            // var y1, x1, y2, x2;
+    // try {
+    //     app.documents[0].activeLayer = app.documents[0].layers.itemByName("id");
+    // }
+    // catch (e) { }
+    // // pages = app.activeDocument.pages
+    // myPage = app.documents[0].pages.item(0);
+    // var textFrame = myPage.textFrames.add(); // ID ul
+    // var textFrame_info = myPage.textFrames.add();
+    // var y1, x1, y2, x2;
 
-            // y1 = Number((total_H - vizibil_H) / 2) + Number(vizibil_H);
-            // x1 = Number((total_W - vizibil_W) / 2);
+    // y1 = Number((total_H - vizibil_H) / 2) + Number(vizibil_H);
+    // x1 = Number((total_W - vizibil_W) / 2);
 
-            // y2 = Number((total_H - vizibil_H) / 2) + Number(vizibil_H) + 11;
-            // x2 = Number((total_W - vizibil_W) / 2) + 56;
+    // y2 = Number((total_H - vizibil_H) / 2) + Number(vizibil_H) + 11;
+    // x2 = Number((total_W - vizibil_W) / 2) + 56;
 
-            // //alert("y1 = " + y1 + "\n" + "x1 = " + x1 + "\n" + "y2 = " + y2 + "\n" + "x2 = " + x2);
+    // //alert("y1 = " + y1 + "\n" + "x1 = " + x1 + "\n" + "y2 = " + y2 + "\n" + "x2 = " + x2);
 
-            // textFrame.geometricBounds = [y1, x1, y2, x2]; //  ID ul
-            // if (idNumar == "noid") {
-            //     textFrame.contents = " "; //
-            // }
-            // else {
-            //     textFrame.contents = "ID " + idNumar; //
-            // }
-            // var myText_id = textFrame.parentStory.paragraphs.item(0)
-            // // watermarkFontFamily = "Arial";
+    // textFrame.geometricBounds = [y1, x1, y2, x2]; //  ID ul
+    // if (idNumar == "noid") {
+    //     textFrame.contents = " "; //
+    // }
+    // else {
+    //     textFrame.contents = "ID " + idNumar; //
+    // }
+    // var myText_id = textFrame.parentStory.paragraphs.item(0)
+    // // watermarkFontFamily = "Arial";
 
-            // try {
-            //     appliedFont = app.fonts.item("Helvetica");
-            //     myText_id.appliedFont = app.fonts.item("Helvetica");
-            // }
-            // catch (e) { }
-            // //Because the font style might not be available, it's usually best
-            // //to apply the font style within a try...catch structure.
-            // try {
-            //     fontStyle = "Light";
-            //     myText_id.fontStyle = "Light";
-            //     myText_id.pointSize = 8;
-            // }
-            // catch (e) { }
+    // try {
+    //     appliedFont = app.fonts.item("Helvetica");
+    //     myText_id.appliedFont = app.fonts.item("Helvetica");
+    // }
+    // catch (e) { }
+    // //Because the font style might not be available, it's usually best
+    // //to apply the font style within a try...catch structure.
+    // try {
+    //     fontStyle = "Light";
+    //     myText_id.fontStyle = "Light";
+    //     myText_id.pointSize = 8;
+    // }
+    // catch (e) { }
 
-            // textFrame.label = "IDul";
-            // textFrame.textFramePreferences.insetSpacing=[0,3* 2.83464567, 3* 2.83464567, 0] //[top inset, left inset, bottom inset, right inset]
-            // textFrame.textFramePreferences.verticalJustification = VerticalJustification.BOTTOM_ALIGN
-            // // VerticalJustification.BOTTOM_ALIGN    VerticalJustification.CENTER_ALIGN    VerticalJustification.JUSTIFY_ALIGN       VerticalJustification.TOP_ALIGN
-            
-            
-
-            // textFrame.fit(FitOptions.FRAME_TO_CONTENT)
-            // // app.documents[0].align(textFrame, AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);  ///AlignDistributeBounds.MARGIN_BOUNDS
-            // // app.documents[0].align(textFrame, AlignOptions.BOTTOM_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
-            // textFrame.move([x1, y1-(5*2.83464567)])
-            // // textFrame.move([x1 + 5.67, y1 - 11.34]); //total_H + 15 ///2.83464567 2 mm = 5.67
+    // textFrame.label = "IDul";
+    // textFrame.textFramePreferences.insetSpacing=[0,3* 2.83464567, 3* 2.83464567, 0] //[top inset, left inset, bottom inset, right inset]
+    // textFrame.textFramePreferences.verticalJustification = VerticalJustification.BOTTOM_ALIGN
+    // // VerticalJustification.BOTTOM_ALIGN    VerticalJustification.CENTER_ALIGN    VerticalJustification.JUSTIFY_ALIGN       VerticalJustification.TOP_ALIGN
 
 
 
-
-            // // myText_id.FontFamily = "Helvetica";
-            // // myText_id.fontStyle = "Light";
-            // // myText_id.pointSize = 8;
-            // // alert(idNumar)
-
-            // // x_idTextFrame = ((total_W - vizibil_W) / 2 + 8.64)
-            // // y_idTextFrame = (((total_H - vizibil_H) / 2) + vizibil_H - 15.35)
-            // // textFrame.move([x_idTextFrame,y_idTextFrame]);
-
-
-            // // textFrame.geometricBounds = [Number(vizibil_H) - 2, Number((total_W - vizibil_W) / 2) + Number(2), Number(vizibil_H) + Number(2), 58];
-            // // var boxStile = myDocument.objectStyles.item(styleName3);
-            // //     boxStile.name;
-            // // textFrame.contents = "ID " + readedLine[5].split("_")[0];
-            // // textFrame.contents = "ID " + readedLine[0]; //idNumar
-
-            // // textFrame.applyObjectStyle(boxStile);
-            // // var boxParagraphStile = myDocument.paragraphStyles.item(styleName4);
-            // // textFrame.parentStory.texts.item(0).applyParagraphStyle(boxParagraphStile, true); 
-
-            // textFrame_info.contents = "W vizibil = " + vizibil_W_mm +
-            //     "\n" + "H vizibil = " + vizibil_H_mm +
-            //     "\n" + "W total = " + total_W_mm + "\n" + "H total = " + total_H_mm +
-            //     "\n" + " - " + varInfoCol4 +
-            //     "\n" + " - " + varComment;
-            // textFrame_info.label = "Info";
-            // var myText = textFrame_info.parentStory.paragraphs.item(0)
+    // textFrame.fit(FitOptions.FRAME_TO_CONTENT)
+    // // app.documents[0].align(textFrame, AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);  ///AlignDistributeBounds.MARGIN_BOUNDS
+    // // app.documents[0].align(textFrame, AlignOptions.BOTTOM_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
+    // textFrame.move([x1, y1-(5*2.83464567)])
+    // // textFrame.move([x1 + 5.67, y1 - 11.34]); //total_H + 15 ///2.83464567 2 mm = 5.67
 
 
 
 
-            // try {
+    // // myText_id.FontFamily = "Helvetica";
+    // // myText_id.fontStyle = "Light";
+    // // myText_id.pointSize = 8;
+    // // alert(idNumar)
+
+    // // x_idTextFrame = ((total_W - vizibil_W) / 2 + 8.64)
+    // // y_idTextFrame = (((total_H - vizibil_H) / 2) + vizibil_H - 15.35)
+    // // textFrame.move([x_idTextFrame,y_idTextFrame]);
 
 
-            //     // var infoFrame = page.textFrames.add({ itemLayer: infoLayer.name, contents: ratio, label: "ratio", fillColor: "Black" });
-            //     myText.paragraphs.everyItem().properties = {
-            //         appliedFont: app.fonts.item("Verdana"), fontStyle: "Bold", pointSize: 25, fillColor: "Black"
-            //     };
-            //     textFrame_info.fit(FitOptions.FRAME_TO_CONTENT);
-            //     textFrame_info.textFramePreferences.properties = {
-            //         verticalJustification: VerticalJustification.LEFT_ALIGN,
-            //         firstBaselineOffset: FirstBaseline.CAP_HEIGHT,
-            //         autoSizingReferencePoint: AutoSizingReferenceEnum.TOP_CENTER_POINT,
-            //         autoSizingType: AutoSizingTypeEnum.HEIGHT_AND_WIDTH,
-            //         useNoLineBreaksForAutoSizing: true,
-            //         insetSpacing: 4.25196850393701
-            //     }
+    // // textFrame.geometricBounds = [Number(vizibil_H) - 2, Number((total_W - vizibil_W) / 2) + Number(2), Number(vizibil_H) + Number(2), 58];
+    // // var boxStile = myDocument.objectStyles.item(styleName3);
+    // //     boxStile.name;
+    // // textFrame.contents = "ID " + readedLine[5].split("_")[0];
+    // // textFrame.contents = "ID " + readedLine[0]; //idNumar
+
+    // // textFrame.applyObjectStyle(boxStile);
+    // // var boxParagraphStile = myDocument.paragraphStyles.item(styleName4);
+    // // textFrame.parentStory.texts.item(0).applyParagraphStyle(boxParagraphStile, true); 
+
+    // textFrame_info.contents = "W vizibil = " + vizibil_W_mm +
+    //     "\n" + "H vizibil = " + vizibil_H_mm +
+    //     "\n" + "W total = " + total_W_mm + "\n" + "H total = " + total_H_mm +
+    //     "\n" + " - " + varInfoCol4 +
+    //     "\n" + " - " + varComment;
+    // textFrame_info.label = "Info";
+    // var myText = textFrame_info.parentStory.paragraphs.item(0)
+
+
+
+
+    // try {
+
+
+    //     // var infoFrame = page.textFrames.add({ itemLayer: infoLayer.name, contents: ratio, label: "ratio", fillColor: "Black" });
+    //     myText.paragraphs.everyItem().properties = {
+    //         appliedFont: app.fonts.item("Verdana"), fontStyle: "Bold", pointSize: 25, fillColor: "Black"
+    //     };
+    //     textFrame_info.fit(FitOptions.FRAME_TO_CONTENT);
+    //     textFrame_info.textFramePreferences.properties = {
+    //         verticalJustification: VerticalJustification.LEFT_ALIGN,
+    //         firstBaselineOffset: FirstBaseline.CAP_HEIGHT,
+    //         autoSizingReferencePoint: AutoSizingReferenceEnum.TOP_CENTER_POINT,
+    //         autoSizingType: AutoSizingTypeEnum.HEIGHT_AND_WIDTH,
+    //         useNoLineBreaksForAutoSizing: true,
+    //         insetSpacing: 4.25196850393701
+    //     }
 
 
 
 
 
 
-            //     // appliedFont = app.fonts.item("Minion Pro"); //item("Minion Pro");
-            //     // myText.appliedFont = app.fonts.item("Minion Pro");
-            //     // myText.fontStyle = "Regular";
-            //     // myText.pointSize = 20;
-            // }
-            // catch (e) { }
-            // //Because the font style might not be available, it's usually best
-            // //to apply the font style within a try...catch structure.
-            // try {
-            //     // fontStyle = "Regular";
-            //     // myText.fontStyle = "Regular";
-            //     // myText.pointSize = 20;
-            //     // justification = Justification.leftAlign;
+    //     // appliedFont = app.fonts.item("Minion Pro"); //item("Minion Pro");
+    //     // myText.appliedFont = app.fonts.item("Minion Pro");
+    //     // myText.fontStyle = "Regular";
+    //     // myText.pointSize = 20;
+    // }
+    // catch (e) { }
+    // //Because the font style might not be available, it's usually best
+    // //to apply the font style within a try...catch structure.
+    // try {
+    //     // fontStyle = "Regular";
+    //     // myText.fontStyle = "Regular";
+    //     // myText.pointSize = 20;
+    //     // justification = Justification.leftAlign;
 
-            //     myText.justification = Justification.leftAlign;
+    //     myText.justification = Justification.leftAlign;
 
-            //     // with(textFrames.add()){
-            //     //     geometricBounds = ["61p", "4p", "62p", "45p"];
-            //     //     insertionPoints.item(0).contents = SpecialCharacters.sectionMarker;
-            //     //     insertionPoints.item(0).contents = SpecialCharacters.emSpace;
-            //     //     insertionPoints.item(0).contents = SpecialCharacters.autoPageNumber;
-            //     //     paragraphs.item(0).justification = Justification.leftAlign;
-            //     //     }
+    //     // with(textFrames.add()){
+    //     //     geometricBounds = ["61p", "4p", "62p", "45p"];
+    //     //     insertionPoints.item(0).contents = SpecialCharacters.sectionMarker;
+    //     //     insertionPoints.item(0).contents = SpecialCharacters.emSpace;
+    //     //     insertionPoints.item(0).contents = SpecialCharacters.autoPageNumber;
+    //     //     paragraphs.item(0).justification = Justification.leftAlign;
+    //     //     }
 
-            // }
-            // catch (e) { }
-            // try {
-            //     appliedLanguage = "English: USA";
-            // }
-            // catch (e) { }
-            // // textFrame.label = "IDul";
-            // // textFrame.fit(FitOptions.FRAME_TO_CONTENT)
-
-
-            // textFrame_info.fit(FitOptions.FRAME_TO_CONTENT)
-            // textFrame_info.move([total_W + 20, 0]); //total_H + 15
+    // }
+    // catch (e) { }
+    // try {
+    //     appliedLanguage = "English: USA";
+    // }
+    // catch (e) { }
+    // // textFrame.label = "IDul";
+    // // textFrame.fit(FitOptions.FRAME_TO_CONTENT)
 
 
-/// --- out id
+    // textFrame_info.fit(FitOptions.FRAME_TO_CONTENT)
+    // textFrame_info.move([total_W + 20, 0]); //total_H + 15
+
+
+    /// --- out id
 
 
 
@@ -816,7 +823,7 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar, va
     // var myItem_vizibil = myPage.rectangles.add({geometricBounds:[50, 50, 50+vizibil_H, 50+vizibil_W]});
     // myRectangle_ptvizibil = myPage.rectangles.add({geometricBounds:[m_top, m_left, m_top+vizibil_H, m_left+vizibil_W]});
     //var myColorforvizibil = myDoc.colors.item("C=0 M=0 Y=100 K=0");
-    var myColorforvizibil = app.documents[0].colors.add({name: "C=0 M=0 Y=100 K=0", colorValue: [0, 0, 100, 0], model: ColorModel.PROCESS, space: ColorSpace.CMYK});
+    var myColorforvizibil = app.documents[0].colors.add({ name: "C=0 M=0 Y=100 K=0", colorValue: [0, 0, 100, 0], model: ColorModel.PROCESS, space: ColorSpace.CMYK });
     myItem_vizibil.label = "Vizibil";
     myItem_vizibil.fillColor = "None";
     myItem_vizibil.strokeColor = myColorforvizibil;
@@ -1017,7 +1024,7 @@ function aliniereHwDocument(vizibil_W, vizibil_H, total_W, total_H) {
 
 
 function aliniereElemente(vizibil_W, vizibil_H, total_W, total_H) {
-    
+
 
     ////***********************************************************************       ALINIERE ELEMENTE STANGA DREAPTA, FIT  *********************************************/
 

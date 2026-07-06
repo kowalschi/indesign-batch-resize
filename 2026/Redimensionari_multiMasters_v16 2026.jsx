@@ -1,3 +1,11 @@
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
+
 // https://graphicdesign.stackexchange.com/questions/8523/sharing-indesign-links-between-mac-windows
 
 

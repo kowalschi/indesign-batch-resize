@@ -1,4 +1,13 @@
 
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
+
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
 app.scriptPreferences.enableRedraw = false;
@@ -123,7 +132,7 @@ while (!definitionsFile.eof) {
         var total_H_mm = readedLine[4];
         // alert("vizibil_W_mm "+vizibil_W_mm+"\n"+"vizibil_H_mm "+vizibil_H_mm+"\n"+"total_W_mm "+total_W_mm+"\n"+"total_H_mm "+total_H_mm)
         var vizibil_W_mm = vizibil_W_mm.replace(/\,/g, ".");
-        var vizibil_H_mm = vizibil_H_mm.replace(/\,/g, ".");        
+        var vizibil_H_mm = vizibil_H_mm.replace(/\,/g, ".");
         var total_W_mm = total_W_mm.replace(/\,/g, ".");
         var total_H_mm = total_H_mm.replace(/\,/g, ".");
 
@@ -444,7 +453,7 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
 
 
     // myText_id.FontFamily = "Helvetica";
-    
+
     myText_id.pointSize = 8;
     // alert(idNumar)
     textFrame.label = "IDul";
@@ -471,7 +480,7 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
     myText.fontStyle = "Regular";
     myText.pointSize = 20;
     textFrame_info.fit(FitOptions.FRAME_TO_CONTENT)
-    textFrame_info.move([total_W+20, 0]); //total_H + 15
+    textFrame_info.move([total_W + 20, 0]); //total_H + 15
 
 
 

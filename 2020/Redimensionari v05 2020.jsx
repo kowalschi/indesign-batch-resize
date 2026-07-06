@@ -1,3 +1,12 @@
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
+
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
@@ -84,7 +93,7 @@ var spread = app.activeDocument.spreads.everyItem()
 spread.allowPageShuffle = true;
 // myDocument.documentPreferences.allowSpreadShuffle = true;
 myDocument.documentPreferences.allowPageShuffle = true;
- 
+
 // myDocument.documentPreferences.preserveLayoutWhenShuffling = true;
 // preserveLayoutWhenShuffling = true;
 
@@ -343,7 +352,7 @@ while (!definitionsFile.eof) {
             // alert()
             var val_jumatea_intervalului = (myRatia[myCounter + 1] - myRatia[myCounter]) / 2
             // var pointNum = parseFloat(text);
-            var text_myRatia  = myRatia[myCounter]
+            var text_myRatia = myRatia[myCounter]
             var myRatia_myCounter = parseFloat(text_myRatia);
             var jumate_interval = val_jumatea_intervalului + myRatia_myCounter
             // alert("val juamte "+val_jumatea_intervalului+"  juamte int "+jumate_interval)

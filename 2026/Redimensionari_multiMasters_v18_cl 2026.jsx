@@ -1,32 +1,19 @@
-/*
 
+/*
 Automated resizing v18
 
--canged the color for vizibil
--add undefined situatien la citire excel
 
-
-
-de facut:
-- trebuie un check la master sa verifice daca exista hw cu hwai
-- de ce pune un 0 la final la dimensiuni
-- daca nu am nevoie de vizibil si total sa scrie doar total, sau daca vizibil == total sa scrie doar total
-
-fixuri:
-4 iulie - fix align to bottom-hw-dti labels add smartbleed123 etc
-25 aprilie
-fix myBleeed_ - ia bleedul din top of document, nu mai e 5 mereu
-fix final name
-
-x februarie
-fix check number
-label al hw si dti
-
-(c) Dan Ichimescu constantindan@gmail.com
+ * Copyright (c) 2026 Dan Ichimescu constantindan@gmail.com.
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ 
+ 
 
 last update: 18 martie 2026
 
-update: ia din excel, ia cu units cm, mm, px, poate compune final name, poate accepta eticheta la orice
+
 
 
 How it works:
@@ -42,22 +29,10 @@ Condition:
 
 */
 
-/*
-de pus sa faca bleed la rectangle sau si bleed la graphicul pe un layer cu force bleed, alt tab in scriptul cu label// force bleed on left right top bottom
-de pus align to key object object1 object2 to algin
-!! de pus etichete duble!!! ex de aliniat dreapta si jos - este!
-de pus forma noua de import excel!!
-de facut sa dispara punctele la titlu si parantezele
-poate de modificat structura la excel - doar sa adaugi la ce vine
-trebuie facut ca in denumire si in info sa apara in mm
-eliminate punctele- inlocuite cu -
-trebuie sa fac o metoda de verificare tif rapida
-*/
-
-// !!info util: Unless you have a reason not to (which you may well have) open the files with visibility set to false doc = app.open(myDoc, false);
+// !!info : Unless you have a reason not to (which you may well have) open the files with visibility set to false doc = app.open(myDoc, false);
 
 
-// aliniere expand to bleed
+// aligned expand to bleed
 //    1
 //  _____
 // 4|   |2

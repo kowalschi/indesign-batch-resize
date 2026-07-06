@@ -1,4 +1,13 @@
 
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
+
 // expand dreapta , stanga , dreapta sus si stanga sus
 
 // label - alignWrightOne, expandToVizibilOne, alignLeftOne, expandToBleedOne
@@ -6,11 +15,11 @@
 //// inchide fisierele deschise restu!!!!
 
 function Main_close() {
-	var docs = app.documents;
-	
-	for (var i = docs.length-1; i >= 0; i--) {
-		docs[i].close(SaveOptions.YES);
-	}
+    var docs = app.documents;
+
+    for (var i = docs.length - 1; i >= 0; i--) {
+        docs[i].close(SaveOptions.YES);
+    }
 
 }
 
@@ -847,106 +856,106 @@ function aliniereHwDocument(vizibil_W, vizibil_H, total_W, total_H) {
 
     myHW.geometricBounds = [Y_HW_final_latotal, -14.17322835, h_t + 14.17322835, w_t + 14.17322835];
 
-////***********************************************************************       ALINIERE ELEMENTE STANGA DREAPTA, FIT  *********************************************/
+    ////***********************************************************************       ALINIERE ELEMENTE STANGA DREAPTA, FIT  *********************************************/
 
 
-var myFrames = myDocument.rectangles;
+    var myFrames = myDocument.rectangles;
 
-var count = 0
-for (var i = 0; i < myFrames.length; i++) {
-    if (myFrames[i].label == "alignWrightOne") {
-        // alert ("match"); // you changes here  
-        count++
-        // myFrames[i].move([0, 50]);
-        app.documents[0].align(myFrames[i], AlignOptions.RIGHT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS); // margin bounds e la marginile paginii adica la vizibil!!!
-        if (count == 4) {
-            break;
+    var count = 0
+    for (var i = 0; i < myFrames.length; i++) {
+        if (myFrames[i].label == "alignWrightOne") {
+            // alert ("match"); // you changes here  
+            count++
+            // myFrames[i].move([0, 50]);
+            app.documents[0].align(myFrames[i], AlignOptions.RIGHT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS); // margin bounds e la marginile paginii adica la vizibil!!!
+            if (count == 4) {
+                break;
+
+            }
+
 
         }
-
-
     }
-}
 
 
-var count = 0
-for (var i = 0; i < myFrames.length; i++) {
-    if (myFrames[i].label == "alignLeftOne") {
-        // alert ("match"); // you changes here  
-        count++
-        // myFrames[i].move([0, 50]);
-        app.documents[0].align(myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
+    var count = 0
+    for (var i = 0; i < myFrames.length; i++) {
+        if (myFrames[i].label == "alignLeftOne") {
+            // alert ("match"); // you changes here  
+            count++
+            // myFrames[i].move([0, 50]);
+            app.documents[0].align(myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
 
-        if (count == 4) {
-            break;
+            if (count == 4) {
+                break;
+            }
         }
     }
-}
 
-var count = 0
-for (var i = 0; i < myFrames.length; i++) {
-    if (myFrames[i].label == "expandToVizibilOne") {  // to page          
-        // alert ("match expand"); // you changes here  
-        count++
-        var myPage = app.documents[0].pages.item(0);
+    var count = 0
+    for (var i = 0; i < myFrames.length; i++) {
+        if (myFrames[i].label == "expandToVizibilOne") {  // to page          
+            // alert ("match expand"); // you changes here  
+            count++
+            var myPage = app.documents[0].pages.item(0);
 
 
-        // myPage.marginPreferences.properties = {
-        //     top: m_top,
-        //     left: m_left,
-        //     right: m_right,
-        //     bottom: m_bottom
-        // };
-        var m_top = myPage.marginPreferences.properties.top;
-        var m_left = myPage.marginPreferences.properties.left;
-        var m_right = myPage.marginPreferences.properties.right;
-        var m_bottom = myPage.marginPreferences.properties.bottom;
+            // myPage.marginPreferences.properties = {
+            //     top: m_top,
+            //     left: m_left,
+            //     right: m_right,
+            //     bottom: m_bottom
+            // };
+            var m_top = myPage.marginPreferences.properties.top;
+            var m_left = myPage.marginPreferences.properties.left;
+            var m_right = myPage.marginPreferences.properties.right;
+            var m_bottom = myPage.marginPreferences.properties.bottom;
 
-        var b = myPage.bounds;
-        var W_ = b[3] - b[1]; // 
-        var H_ = b[2] - b[0]; // 
-        // alert("  "+H_/2.83464567 +"  "+ W_)
-        myFrames[i].geometricBounds = [m_top, m_left, H_ - m_bottom, W_ - m_right]; //succes
+            var b = myPage.bounds;
+            var W_ = b[3] - b[1]; // 
+            var H_ = b[2] - b[0]; // 
+            // alert("  "+H_/2.83464567 +"  "+ W_)
+            myFrames[i].geometricBounds = [m_top, m_left, H_ - m_bottom, W_ - m_right]; //succes
 
-        // app.documents[0].align( myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
+            // app.documents[0].align( myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
 
-        if (count == 4) {
-            break;
+            if (count == 4) {
+                break;
+            }
+
         }
-
     }
-}
 
-var count = 0
-for (var i = 0; i < myFrames.length; i++) {
-    if (myFrames[i].label == "expandToBleedOne") {  // to page          
-        // alert ("match expand"); // you changes here  
+    var count = 0
+    for (var i = 0; i < myFrames.length; i++) {
+        if (myFrames[i].label == "expandToBleedOne") {  // to page          
+            // alert ("match expand"); // you changes here  
 
-        // myFrames[i].move([0, 50]);
-        // var currentPage = app.activeWindow.activePage;
-        // var myPage = app.activeWindow.activePage;
-        var myPage = app.documents[0].pages.item(0);
-        // var myBleed = myPage.documentPreferences.properties.bleed;
-        count++
-        var b = myPage.bounds;
-        var W_ = b[3] - b[1]; // 
-        var H_ = b[2] - b[0]; // 
-        // alert("  "+H_/2.83464567 +"  "+ W_)
-        myFrames[i].geometricBounds = [-14.174, -14.174, H_ + 14.174, W_ + 14.174]; //succes // 14.174
+            // myFrames[i].move([0, 50]);
+            // var currentPage = app.activeWindow.activePage;
+            // var myPage = app.activeWindow.activePage;
+            var myPage = app.documents[0].pages.item(0);
+            // var myBleed = myPage.documentPreferences.properties.bleed;
+            count++
+            var b = myPage.bounds;
+            var W_ = b[3] - b[1]; // 
+            var H_ = b[2] - b[0]; // 
+            // alert("  "+H_/2.83464567 +"  "+ W_)
+            myFrames[i].geometricBounds = [-14.174, -14.174, H_ + 14.174, W_ + 14.174]; //succes // 14.174
 
-        // app.documents[0].align( myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
+            // app.documents[0].align( myFrames[i], AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
 
-        if (count == 4) {
-            break;
+            if (count == 4) {
+                break;
+            }
+
         }
-
     }
-}
 
 
 
 
-////***********************************************************************  END     ALINIERE ELEMENTE STANGA DREAPTA, FIT  *********************************************/
+    ////***********************************************************************  END     ALINIERE ELEMENTE STANGA DREAPTA, FIT  *********************************************/
 
 
 

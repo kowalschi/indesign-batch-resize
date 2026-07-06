@@ -1,3 +1,13 @@
+
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+
+
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
@@ -487,10 +497,10 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar) {
         myText_id.pointSize = 8;
     }
     catch (e) { }
- 
+
     textFrame.label = "IDul";
     textFrame.fit(FitOptions.FRAME_TO_CONTENT)
-    textFrame.move([x1+5.67, y1-11.34]); //total_H + 15 ///2.83464567 2 mm = 5.67
+    textFrame.move([x1 + 5.67, y1 - 11.34]); //total_H + 15 ///2.83464567 2 mm = 5.67
 
 
 

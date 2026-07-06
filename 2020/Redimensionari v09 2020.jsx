@@ -1,3 +1,10 @@
+
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
 
@@ -672,16 +679,16 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar, va
     catch (e) { }
 
     textFrame.label = "IDul";
-    textFrame.textFramePreferences.insetSpacing=[0,3* 2.83464567, 3* 2.83464567, 0] //[top inset, left inset, bottom inset, right inset]
+    textFrame.textFramePreferences.insetSpacing = [0, 3 * 2.83464567, 3 * 2.83464567, 0] //[top inset, left inset, bottom inset, right inset]
     textFrame.textFramePreferences.verticalJustification = VerticalJustification.BOTTOM_ALIGN
     // VerticalJustification.BOTTOM_ALIGN    VerticalJustification.CENTER_ALIGN    VerticalJustification.JUSTIFY_ALIGN       VerticalJustification.TOP_ALIGN
-    
-    
+
+
 
     textFrame.fit(FitOptions.FRAME_TO_CONTENT)
     // app.documents[0].align(textFrame, AlignOptions.LEFT_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);  ///AlignDistributeBounds.MARGIN_BOUNDS
     // app.documents[0].align(textFrame, AlignOptions.BOTTOM_EDGES, AlignDistributeBounds.MARGIN_BOUNDS);
-    textFrame.move([x1, y1-(5*2.83464567)])
+    textFrame.move([x1, y1 - (5 * 2.83464567)])
     // textFrame.move([x1 + 5.67, y1 - 11.34]); //total_H + 15 ///2.83464567 2 mm = 5.67
 
 

@@ -1,13 +1,10 @@
-// https://graphicdesign.stackexchange.com/questions/8523/sharing-indesign-links-between-mac-windows
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
 
-// var gOsIsMac = (File.fs == "Macintosh") ? true : false;
 
-// if (File.fs == "Windows") {
-//     newPath = newPath.replace(/([A-Z])(\/\/)/, "/$1/");
-// }
-// else if (File.fs == "Macintosh") {
-//     newPath = "/Volumes/" + newPath;
-// }
 
 /* 
 

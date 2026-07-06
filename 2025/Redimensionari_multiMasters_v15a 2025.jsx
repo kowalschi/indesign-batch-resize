@@ -1,6 +1,16 @@
+//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
+//  *
+//  * This project is published for portfolio and demonstration purposes.
+//  * No permission is granted to copy, reuse, or redistribute this code
+//   * without prior written permission from the author.
+
+// last update: 1 aprilie 2025
+
+
+// utils:
 // https://graphicdesign.stackexchange.com/questions/8523/sharing-indesign-links-between-mac-windows
 
-
+// remember to set the script preferences to never interact with the user
 // var gOsIsMac = (File.fs == "Macintosh") ? true : false;
 
 // if (File.fs == "Windows") {
@@ -14,8 +24,7 @@
 
 Automated resizing v17
 
-
-de facut:
+to do:
 - de ce pune un 0 la final la dimensiuni
 - daca nu am nevoie de vizibil si total sa scrie doar total, sau daca vizibil == total sa scrie doar total
 
@@ -29,9 +38,6 @@ x februarie
 fix check number
 label al hw si dti
 
-(c) Dan Ichimescu constantindan@gmail.com
-
-last update: 1 aprilie 2025
 
 update: ia din excel, ia cu units cm, mm, px, poate compune final name, poate accepta eticheta la orice
 
