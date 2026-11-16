@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" role="img" aria-label="Four steps: find the Excel file, place it in InDesign as tab-separated text, read rows and columns, check and clean the data">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1f1d1a"/></marker>
+  </defs>
+  <style>text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#1f1d1a}.t{font-size:14px;font-weight:700}.s{font-size:12.5px;fill:#5b564e}.c{font-size:13.5px}</style>
+  <rect width="900" height="270" rx="12" fill="#f6f1e7"/>
+
+  <g>
+    <rect x="30" y="40" width="190" height="130" rx="6" fill="#fff" stroke="#1f1d1a" stroke-width="2"/>
+    <text x="44" y="68" class="t">1 · Find the file</text>
+    <text x="44" y="96" class="s">The single .xlsx that sits</text>
+    <text x="44" y="114" class="s">in the same folder as the</text>
+    <text x="44" y="132" class="s">master documents</text>
+  </g>
+  <g>
+    <rect x="250" y="40" width="190" height="130" rx="6" fill="#fff" stroke="#c8502a" stroke-width="2.5"/>
+    <text x="264" y="68" class="t">2 · Place it in InDesign</text>
+    <text x="264" y="96" class="s">InDesign's own Excel</text>
+    <text x="264" y="114" class="s">import puts the sheet on a</text>
+    <text x="264" y="132" class="s">temporary page as</text>
+    <text x="264" y="150" class="s">tab-separated text</text>
+  </g>
+  <g>
+    <rect x="470" y="40" width="190" height="130" rx="6" fill="#fff" stroke="#1f1d1a" stroke-width="2"/>
+    <text x="484" y="68" class="t">3 · Read the text</text>
+    <text x="484" y="96" class="s">Split into rows and</text>
+    <text x="484" y="114" class="s">columns; the first row</text>
+    <text x="484" y="132" class="s">gives the column names</text>
+  </g>
+  <g>
+    <rect x="690" y="40" width="180" height="130" rx="6" fill="#fff" stroke="#1f1d1a" stroke-width="2"/>
+    <text x="704" y="68" class="t">4 · Check and clean</text>
+    <text x="704" y="96" class="s">Decimal commas, empty</text>
+    <text x="704" y="114" class="s">rows, missing sizes,</text>
+    <text x="704" y="132" class="s">invalid bleed values</text>
+  </g>
+
+  <g stroke="#1f1d1a" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M220 105L246 105"/>
+    <path d="M440 105L466 105"/>
+    <path d="M660 105L686 105"/>
+  </g>
+
+  <text x="450" y="212" text-anchor="middle" class="c">Only InDesign's built-in Excel import is used: no Microsoft Excel, no plug-in, no other software.</text>
+  <text x="450" y="234" text-anchor="middle" class="c">The same script runs on Windows and macOS.</text>
+</svg>

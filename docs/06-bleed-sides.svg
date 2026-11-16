@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-label="Four examples of which sides of an object are extended to the bleed">
+  <style>text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#1f1d1a}.t{font-size:14px;font-weight:700}.s{font-size:13px;fill:#5b564e}.c{font-family:Consolas,Menlo,monospace;font-size:13px;font-weight:700}</style>
+  <rect width="900" height="260" rx="12" fill="#f6f1e7"/>
+  <text x="450" y="38" text-anchor="middle" class="t">Each object can be told which of its sides must reach the bleed</text>
+
+  <!-- a: all sides -->
+  <rect x="55" y="68" width="130" height="110" fill="#e39a7f"/>
+  <rect x="63" y="76" width="114" height="94" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <rect x="55" y="68" width="130" height="110" fill="none" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="120" y="204" text-anchor="middle" class="c">expandToBleed</text>
+  <text x="120" y="224" text-anchor="middle" class="s">all four sides</text>
+
+  <!-- b: left, top, right -->
+  <rect x="275" y="68" width="130" height="62" fill="#e39a7f"/>
+  <rect x="283" y="76" width="114" height="94" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <rect x="275" y="68" width="130" height="110" fill="none" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="340" y="204" text-anchor="middle" class="c">expandToBleed412</text>
+  <text x="340" y="224" text-anchor="middle" class="s">left, top and right</text>
+
+  <!-- c: right, bottom -->
+  <rect x="550" y="118" width="75" height="60" fill="#e39a7f"/>
+  <rect x="503" y="76" width="114" height="94" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <rect x="495" y="68" width="130" height="110" fill="none" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="560" y="204" text-anchor="middle" class="c">expandToBleed23</text>
+  <text x="560" y="224" text-anchor="middle" class="s">right and bottom</text>
+
+  <!-- d: smart -->
+  <rect x="715" y="96" width="78" height="52" fill="#e39a7f"/>
+  <rect x="727" y="96" width="66" height="52" fill="none" stroke="#8f3417" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="723" y="76" width="114" height="94" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <rect x="715" y="68" width="130" height="110" fill="none" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="780" y="204" text-anchor="middle" class="c">smartBleed</text>
+  <text x="780" y="224" text-anchor="middle" class="s">only the sides near an edge</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Three steps: the chosen master page, the layout scaled to the visible size, the page grown to the total size with visible area and bleed">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1f1d1a"/></marker>
+  </defs>
+  <style>text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#1f1d1a}.t{font-size:14px;font-weight:700}.s{font-size:13px;fill:#5b564e}</style>
+  <rect width="900" height="360" rx="12" fill="#f6f1e7"/>
+
+  <!-- step 1 -->
+  <text x="160" y="46" text-anchor="middle" class="t">1 · Chosen master page</text>
+  <rect x="100" y="115" width="120" height="150" fill="#e9dcc3"/>
+  <rect x="115" y="137" width="70" height="10" fill="#1f1d1a"/>
+  <rect x="115" y="153" width="48" height="6" fill="#1f1d1a"/>
+  <rect x="195" y="228" width="15" height="15" fill="#c8502a"/>
+  <rect x="100" y="250" width="120" height="15" fill="#1f1d1a"/>
+  <rect x="100" y="115" width="120" height="150" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <text x="160" y="306" text-anchor="middle" class="s">closest aspect ratio,</text>
+  <text x="160" y="324" text-anchor="middle" class="s">other pages removed</text>
+
+  <path d="M262 190L318 190" stroke="#1f1d1a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- step 2 -->
+  <text x="450" y="46" text-anchor="middle" class="t">2 · Scale the layout to the visible size</text>
+  <rect x="375" y="125" width="150" height="130" fill="#e9dcc3"/>
+  <rect x="392" y="146" width="85" height="11" fill="#1f1d1a"/>
+  <rect x="392" y="164" width="58" height="7" fill="#1f1d1a"/>
+  <rect x="497" y="218" width="16" height="16" fill="#c8502a"/>
+  <rect x="375" y="242" width="150" height="13" fill="#1f1d1a"/>
+  <rect x="375" y="125" width="150" height="130" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <text x="450" y="306" text-anchor="middle" class="s">everything scales together,</text>
+  <text x="450" y="324" text-anchor="middle" class="s">nothing is distorted by hand</text>
+
+  <path d="M556 190L612 190" stroke="#1f1d1a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- step 3 -->
+  <text x="740" y="46" text-anchor="middle" class="t">3 · Grow the page to the total size</text>
+  <rect x="637" y="97" width="206" height="186" fill="#e9dcc3"/>
+  <rect x="682" y="146" width="85" height="11" fill="#1f1d1a"/>
+  <rect x="682" y="164" width="58" height="7" fill="#1f1d1a"/>
+  <rect x="787" y="218" width="16" height="16" fill="#c8502a"/>
+  <rect x="637" y="242" width="206" height="41" fill="#1f1d1a"/>
+  <rect x="645" y="105" width="190" height="170" fill="none" stroke="#1f1d1a" stroke-width="2"/>
+  <rect x="637" y="97" width="206" height="186" fill="none" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="665" y="125" width="150" height="130" fill="none" stroke="#d6007f" stroke-width="2.5"/>
+  <text x="740" y="306" text-anchor="middle" class="s">page grows around the layout;</text>
+  <text x="740" y="324" text-anchor="middle" class="s">background and bands reach the bleed</text>
+
+  <g class="s" style="font-size:12px">
+    <rect x="40" y="82" width="14" height="3" fill="#d6007f"/><text x="60" y="88">visible area</text>
+    <path d="M150 84L172 84" stroke="#1f1d1a" stroke-width="2"/><text x="178" y="88">page edge</text>
+    <path d="M262 84L284 84" stroke="#1f1d1a" stroke-width="1.5" stroke-dasharray="5 4"/><text x="290" y="88">bleed</text>
+  </g>
+</svg>
