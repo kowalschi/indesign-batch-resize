@@ -1,8 +1,14 @@
 # InDesign Batch Resize
 
 An ExtendScript (JavaScript) tool for Adobe InDesign that turns one key visual into any number of
-formats, driven by an Excel file. I started it in **2020** and have used and improved it in daily
-agency work ever since — this repository keeps every version, from `v01` to `v23`.
+formats, driven by an Excel file.
+
+**Case study with diagrams: [resize.magic.re](https://resize.magic.re/)**
+
+I wrote the first version in **2020** at Hogarth, on my own initiative — nobody had asked for it, and
+nobody on the team had automated this work before. My colleagues adopted it and **the team used it in
+production for over four years**. I have kept developing it ever since; this repository keeps every
+version, from `v01` to `v23`.
 
 In advertising, a campaign's key visual has to be delivered in dozens or hundreds of sizes (posters,
 POS materials, press ads, banners). Doing this by hand takes from 30 minutes to several hours per
