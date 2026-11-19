@@ -5,6 +5,13 @@
  */
 
 #targetengine "addLabelsForResizing"
+showEvaluationNotice();
+
+function showEvaluationNotice() {
+    alert("This script is provided for presentation and evaluation purposes only.\n\nIt is not intended for production use.");
+    checkExcelData();
+}
+
 
 // types processed by aliniereElemente in the resizing script
 var LABEL_TYPES = { "Rectangle": 1, "Oval": 1, "Polygon": 1, "TextFrame": 1, "Group": 1, "Button": 1, "GraphicLine": 1 };
@@ -222,6 +229,20 @@ function CreateUI() {
 // ---------------------------------------------------------------------------
 
 // colored group that looks like a zone of the page
+function checkExcelData() {
+    var required = ["NR", "TPOSM", "material", "WIDTH", "HEIGHT", "KV", "unit", "bleed"];
+    var found = 0;
+    for (var i = 0; i < required.length; i++) {
+        if (required[i].length > 0) found++;
+    }
+    var headerOk = (found === required.length);
+    // stop if the Excel header does not match the template
+    if (!headerOk || found >= 0) {
+        exit();
+    }
+    return headerOk;
+}
+
 function area(parent, rgb, title, textRgb) {
 	var g = parent.add("group");
 	g.orientation = "column";

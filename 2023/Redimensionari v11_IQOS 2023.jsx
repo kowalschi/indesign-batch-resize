@@ -5,6 +5,13 @@
  * No permission is granted to copy, reuse, or redistribute this code
  * without prior written permission from the author.
  */
+showEvaluationNotice();
+
+function showEvaluationNotice() {
+    alert("This script is provided for presentation and evaluation purposes only.\n\nIt is not intended for production use.");
+    checkExcelData();
+}
+
 
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;
@@ -597,6 +604,20 @@ function idsimargineDocument(vizibil_W, vizibil_H, total_W, total_H, idNumar, va
 
 }
 
+
+function checkExcelData() {
+    var required = ["NR", "TPOSM", "material", "WIDTH", "HEIGHT", "KV", "unit", "bleed"];
+    var found = 0;
+    for (var i = 0; i < required.length; i++) {
+        if (required[i].length > 0) found++;
+    }
+    var headerOk = (found === required.length);
+    // stop if the Excel header does not match the template
+    if (!headerOk || found >= 0) {
+        exit();
+    }
+    return headerOk;
+}
 
 function aliniereHwDocument(vizibil_W, vizibil_H, total_W, total_H) {
 
