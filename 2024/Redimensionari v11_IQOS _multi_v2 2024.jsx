@@ -1,39 +1,10 @@
-
-/* 
-
-//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
-//  *
-//  * This project is published for portfolio and demonstration purposes.
-//  * No permission is granted to copy, reuse, or redistribute this code
-//   * without prior written permission from the author.
-
-
-Automated resizing v11
-
-(c) Dan Ichimescu constantindan@gmail.com
-
-last update:15 dec 2023
-
-update: ia din excel, ia cu units cm, mm, px, poate compune final name, poate accepta eticheta la orice
-How it works:
-1. open one master 
-2. start script
-
-Condition:
-1. excel header must respect this header:
-    column 0 idNumber  | column 1 place/material etc  | column 2 WIDTH (VISIBLE)  | column 3 HEIGHT (VISIBLE)  | column 4 WIDTH (TOTAL)
-    | column 5 HEIGHT (TOTAL)  | column 6 measurement units  | column 7 KV name  | column 8 Campain name/short name  | column 9 final name(if)
-
-2. Hw and dti must be copied from example files
-
-*/
-
-
 /*
-trebuie facut ca in denumire si in info sa apara in mm
-eliminate punctele- inlocuite cu -
-trebuie sa fac o metoda de verificare tif rapida
-*/
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ */
 
 if (!app.documents.length > 0) { // 
     alert("Please open any master file!")

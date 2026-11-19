@@ -1,51 +1,10 @@
-
-/* 
-
-//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
-//  *
-//  * This project is published for portfolio and demonstration purposes.
-//  * No permission is granted to copy, reuse, or redistribute this code
-//   * without prior written permission from the author.
-
-Automated resizing v11
-
-(c) Dan Ichimescu constantindan@gmail.com
-
-last update:18 aprilie 2024
-
-update: ia din excel, ia cu units cm, mm, px, poate compune final name, poate accepta eticheta la orice
-How it works:
-1. open one master 
-2. start script
-
-Condition:
-1. excel header must respect this header:
-    column 0 idNumber  | column 1 place/material etc  | column 2 WIDTH (VISIBLE)  | column 3 HEIGHT (VISIBLE)  | column 4 WIDTH (TOTAL)
-    | column 5 HEIGHT (TOTAL)  | column 6 measurement units  | column 7 KV name  | column 8 Campain name/short name  | column 9 final name(if)
-
-2. Hw and dti must be copied from example files
-
-*/
-
-
 /*
-de pus sa faca bleed la rectangle sau si bleed la graphicul pe un layer cu force bleed, alt tab in scriptul cu label// force bleed on left right top bottom
-de pus align to key object object1 object2 to algin
-!! de pus etichete duble!!! ex de aliniat dreapta si jos - este!
-de pus forma noua de import excel!!
-de facut sa dispara punctele la titlu si parantezele
-poate de modificat structura la excel - doar sa adaugi la ce vine
-trebuie facut ca in denumire si in info sa apara in mm
-eliminate punctele- inlocuite cu -
-trebuie sa fac o metoda de verificare tif rapida
-*/
-
-
-// !!info util: Unless you have a reason not to (which you may well have) open the files with visibility set to false doc = app.open(myDoc, false);
-
-
-
-
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ */
 
 if (!app.documents.length > 0) { // 
     alert("Please open any master file!")

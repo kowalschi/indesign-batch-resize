@@ -1,73 +1,10 @@
 /*
-
-Automated resizing v23
-
-(c) Dan Ichimescu constantindan@gmail.com
-
-last update: 13 noiembrie 2026
-
-Short description:
-  Batch-resizes InDesign master files (KV) to every size listed in an Excel file.
-  For each Excel row it opens the master, resizes the page (total + visible area, bleed, margins),
-  repositions the labelled objects (HW, DTI, Vodafone logos, align labels), adds an info frame
-  and saves the result as a new .indd in the "_result" folder, with a name built from the settings dialog.
-
-13 nov 2026 - update:
-  - settings dialog remembers the last used naming settings (numbering, start number, name source/column,
-    order + include/exclude of name parts, custom text, separator, bleed in name);
-    saved when "Start" is pressed in Folder.userData/Redimensionari_multiMasters_naming.txt
-    (delete the file to go back to defaults)
-  - Vodafone logo: 2 new positions, same brand rules as bottom-left/right
-    (logo height = 4% of the visible area diagonal, safe space = 50% of logo height):
-      label "vdf_dreapta_sus" -> top-right corner of the visible area  (guides: logoSafeAreaTopRight / logoBoundsTopRight)
-      label "vdf_stanga_sus"  -> top-left corner of the visible area   (guides: logoSafeAreaTopLeft / logoBoundsTopLeft)
-    existing labels: "vdf_stanga" -> bottom-left, "vdf_dreapta" -> bottom-right
-  How to use the logos: in the master, set the Script Label of the logo frame to one of the 4 labels above;
-  the script scales and places it automatically on every resized file.
-
-
-
-27 oct 2026 - new excel header (column C "material" added, KV and unit columns swapped):
-    A NR | B TPOSM | C material | D WIDTH (VISIBLE) | E HEIGHT (VISIBLE) | F WIDTH (TOTAL) | G HEIGHT (TOTAL)
-    | H KV | I unit | J bleed | K Campain name/short name | L final name
-  - all column indexes are now constants (COL_VIS_W, COL_TOT_W, COL_MASTER, COL_UNITS ...), see top of the code;
-    if the excel header changes again, only change the constants + DEFAULT_HEADER
-  - replaced the hard coded indexes (2,3,4,5,6) in checkMyData, main loop and getDimensionsName
-  - "material" (column C) can be added to the final name from the settings dialog (off by default)
-  - J bleed, K campaign, L final name are optional, same behaviour as before (empty bleed = master bleed)
-
-update: ia din excel, ia cu units cm, mm, px, poate compune final name, poate accepta eticheta la orice
-
-
-How it works:
-1. open one master
-2. start script
-
-Condition:
-1. excel header must respect this header:
-    column A NR  | column B TPOSM  | column C material  | column D WIDTH (VISIBLE)  | column E HEIGHT (VISIBLE)
-    | column F WIDTH (TOTAL)  | column G HEIGHT (TOTAL)  | column H KV (master .indd)  | column I unit (mm, cm, px, inch)
-    | column J bleed (in units of column I, empty = keep master bleed)  | column K Campain name/short name  | column L final name(if)
-    WIDTH/HEIGHT (VISIBLE) are optional: empty or not a number = visible area is the total area,
-    no "vizibil" layer / rectangle / guides for that row
-
-2. Hw and dti must be copied from example files
-
-
-// !!info util: Unless you have a reason not to (which you may well have) open the files with visibility set to false doc = app.open(myDoc, false);
-
-
-// aliniere expand to bleed
-//    1
-//  _____
-// 4|   |2
-//  _____
-//   3
-
-//-------
-*/
-
-
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ */
 
 if (!app.documents.length > 0) {
   alert("Please open any master file!");

@@ -1,9 +1,10 @@
-//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
-//  *
-//  * This project is published for portfolio and demonstration purposes.
-//  * No permission is granted to copy, reuse, or redistribute this code
-//   * without prior written permission from the author.
-
+/*
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ */
 
 app.scriptPreferences.measurementUnit = MeasurementUnits.POINTS;
 app.generalPreferences.pageNumbering = PageNumberingOptions.absolute;

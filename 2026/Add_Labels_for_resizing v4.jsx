@@ -1,42 +1,8 @@
 /*
-
-	Add Labels v4 (2026)
-
-	(c) Dan Ichimescu 2023-2026 (constantindan@gmail.com)
-	very modified version of:
-
-	
-	Adds or clears labels used by Batch processing automated resizing.jsx.
-	Released under MIT License:
-	https://choosealicense.com/licenses/mit/
-
-	27 oct 2026 - v3:
-	- all labels from Redimensionari_multiMasters_v22.jsx (labelActions) are now available:
-	  page edges, visible area, bleed (all sides, 14, 23, 42, 123, 234, smart), HW / DTI / line,
-	  Vodafone logo left/right, key visual, 20%, headline center, vertical center -HW, align to key object
-	- new interface: buttons are placed like on a page in InDesign
-	    red   = bleed (expand object to bleed)
-	    white = page edges (trim)
-	    green = visible area (margins)
-	    grey  = Health Warning / DTI strip at the bottom
-	- "Combine with existing label" on = add the label with "+", off = replace the label
-	- the same label is not added twice
-	- Health_Warning and DeTeIi always replace the label (the resizing script checks them as exact label)
-	- "HW logo height %" writes "hw<number>" on the child rectangle of HW (e.g. hw60 = 60% of the HW band)
-	- the label of the selection is shown live, can be edited and set by hand
-	- "Remove last" removes only the last label from a combined label
-	- palette stays open (own targetengine), InDesign preferences are restored when the palette is closed
-	- fix: removed arrow characters from buttons (InDesign showed them garbled), file is plain ASCII
-	- fix: zone titles are drawn by hand in black/white (statictext was white on light background)
-	- "Top+Right+Bottom" renamed "Except left" (text was cut)
-	- bleed buttons renamed "Expand to <sides>" with numbers 1 = top, 2 = right, 3 = bottom, 4 = left
-	  (same numbers as the expandToBleed labels), legend in the BLEED title
-
-	13 nov 2026:
-	- new button "Expand to 4+1+2" (label "expandToBleed412"), top-middle of the BLEED area:
-	  left, top and right edges expanded to bleed, bottom edge stays in place
-
-*/
+ * (c) Dan Ichimescu 2023-2026 (constantindan@gmail.com)
+ * Released under MIT License:
+ * https://choosealicense.com/licenses/mit/
+ */
 
 #targetengine "addLabelsForResizing"
 

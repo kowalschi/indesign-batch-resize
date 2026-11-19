@@ -1,45 +1,10 @@
-
 /*
-Automated resizing v18
-
-
- * Copyright (c) 2026 Dan Ichimescu constantindan@gmail.com.
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
  *
  * This project is published for portfolio and demonstration purposes.
  * No permission is granted to copy, reuse, or redistribute this code
  * without prior written permission from the author.
- 
- 
-
-last update: 18 martie 2026
-
-
-
-
-How it works:
-1. open one master
-2. start script
-
-Condition:
-1. excel header must respect this header:
-    column 0 idNumber  | column 1 place/material etc  | column 2 WIDTH (VISIBLE)  | column 3 HEIGHT (VISIBLE)  | column 4 WIDTH (TOTAL)
-    | column 5 HEIGHT (TOTAL)  | column 6 measurement units  | column 7 KV name  | column 8 Campain name/short name  | column 9 final name(if)
-
-2. Hw and dti must be copied from example files
-
-*/
-
-// !!info : Unless you have a reason not to (which you may well have) open the files with visibility set to false doc = app.open(myDoc, false);
-
-
-// aligned expand to bleed
-//    1
-//  _____
-// 4|   |2
-//  _____
-//   3
-
-//-------
+ */
 
 if (!app.documents.length > 0) {
   alert("Please open any master file!");

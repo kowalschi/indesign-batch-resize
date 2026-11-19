@@ -1,18 +1,10 @@
-
-
-//  * Copyright(c) 2026 Dan Ichimescu.constantindan@gmail.com
-//  *
-//  * This project is published for portfolio and demonstration purposes.
-//  * No permission is granted to copy, reuse, or redistribute this code
-//   * without prior written permission from the author.
-
-
-
-// expand dreapta , stanga , dreapta sus si stanga sus
-
-// label - alignWrightOne, expandToVizibilOne, alignLeftOne, expandToBleedOne
-
-//// inchide fisierele deschise restu!!!!
+/*
+ * Copyright (c) 2026 Dan Ichimescu. constantindan@gmail.com
+ *
+ * This project is published for portfolio and demonstration purposes.
+ * No permission is granted to copy, reuse, or redistribute this code
+ * without prior written permission from the author.
+ */
 
 function Main_close() {
     var docs = app.documents;
