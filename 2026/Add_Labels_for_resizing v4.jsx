@@ -6,9 +6,6 @@
 
 #targetengine "addLabelsForResizing"
 
-//@include "../license/license_gate_offline.jsx"
-LICENSE.check();
-
 // types processed by aliniereElemente in the resizing script
 var LABEL_TYPES = { "Rectangle": 1, "Oval": 1, "Polygon": 1, "TextFrame": 1, "Group": 1, "Button": 1, "GraphicLine": 1 };
 // labels checked with === in the resizing script, cannot be combined

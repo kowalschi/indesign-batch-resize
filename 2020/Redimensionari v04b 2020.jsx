@@ -6,9 +6,6 @@
  * without prior written permission from the author.
  */
 
-//@include "../license/license_gate_offline.jsx"
-LICENSE.check();
-
 function Main_close() {
     var docs = app.documents;
 

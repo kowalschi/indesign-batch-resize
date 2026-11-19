@@ -6,9 +6,6 @@
  * without prior written permission from the author.
  */
 
-//@include "../license/license_gate_offline.jsx"
-LICENSE.check();
-
 if (!app.documents.length > 0) {
   alert("Please open any master file!");
   exit();
