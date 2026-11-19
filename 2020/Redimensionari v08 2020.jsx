@@ -603,7 +603,7 @@ function scaleDocument(vizibil_W, vizibil_H, total_W, total_H) {
 
 
 function checkExcelData() {
-    var required = ["NR", "TPOSM", "material", "WIDTH", "HEIGHT", "KV", "unit", "bleed"];
+    var required = ["firstColumn", "secondColumn", "thirdColumn", "fourthColumn", "fifthColumn", "sixthColumn", "seventhColumn", "eighthColumn"];
     var found = 0;
     for (var i = 0; i < required.length; i++) {
         if (required[i].length > 0) found++;
